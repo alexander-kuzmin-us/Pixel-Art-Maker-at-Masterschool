@@ -12,7 +12,7 @@ document.addEventListener("submit", function (event) { // Add event listener to 
     makeGrid(userInputHigh, userInputWidth); // When size is submitted by the user, call makeGrid()
 });
 
-function makeGrid(userInputHigh, userInputWidth) {
+const makeGrid = (userInputHigh, userInputWidth) => {
     // Your code goes here!
     let tableRef = document.getElementById("pixelCanvas");
     for (let i = 0; i < userInputHigh; i ++) {
