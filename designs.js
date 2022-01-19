@@ -1,19 +1,24 @@
 // Select color input
+let userColor;
 // Select size input
-let userInputHigh, userInputWidth; //declare variables
+let userInputHigh, userInputWidth;
 
-document.addEventListener("submit", function (a) { //add event listener to the document object
+//Get user input and store it in variables
+document.addEventListener("submit", function (event) { // Add event listener to the document object
     event.preventDefault(); //prevent default behavior of submit button
-    userInputHigh = document.getElementById("inputHeight").value; //locate element by id and assign its value to a var
-    userInputWidth = document.getElementById("inputWidth").value; //locate element by id and assign its value to a var
-    console.log(userInputHigh, userInputWidth); //test line will be comment out later
+    userInputHigh = document.getElementById("inputHeight").value; // Locate element by id and assign its value to a variable
+    userInputWidth = document.getElementById("inputWidth").value; // Locate element by id and assign its value to a variable
+    userColor = document.getElementById("colorPicker").value; // Locate element by id and assign its value to a variable
+    makeGrid(userInputHigh, userInputWidth); // When size is submitted by the user, call makeGrid()
 });
 
-// When size is submitted by the user, call makeGrid()
-
-
-function makeGrid() {
-
-// Your code goes here!
-
+function makeGrid(userInputHigh, userInputWidth) {
+    // Your code goes here!
+    let tableRef = document.getElementById("pixelCanvas");
+    for (let i = 0; i < userInputHigh; i ++) {
+        let newRow = tableRef.insertRow();
+        for (let j = 0; j < userInputWidth; j ++) {
+            newRow.insertCell();
+        }
+    }
 }
