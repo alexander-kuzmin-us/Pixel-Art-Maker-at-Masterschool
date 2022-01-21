@@ -1,24 +1,33 @@
-// Select color input
-let userColor;
-// Select size input
-let userInputHigh, userInputWidth;
+// Global variables stored user inputs
+let userInputHigh, userInputWidth, userColor;
 
-//Get user input and store it in variables
-document.addEventListener("submit", function (event) { // Add event listener to the document object
-    event.preventDefault(); //prevent default behavior of submit button
-    userInputHigh = document.getElementById("inputHeight").value; // Locate element by id and assign its value to a variable
-    userInputWidth = document.getElementById("inputWidth").value; // Locate element by id and assign its value to a variable
-    userColor = document.getElementById("colorPicker").value; // Locate element by id and assign its value to a variable
+// Get user input and store it in variables
+document.addEventListener('submit', function(event) { // Add event listener to the document object
+    event.preventDefault(); //prevent default behavior
+    userInputHigh = document.getElementById('inputHeight').value; // Find element by id and assign its value to a variable
+    userInputWidth = document.getElementById('inputWidth').value; // Find element by id and assign its value to a variable
     makeGrid(userInputHigh, userInputWidth); // When size is submitted by the user, call makeGrid()
 });
 
+// Get user input from color picker and store its value in variable
+document.addEventListener('input', function(event) {
+    event.preventDefault();
+    userColor = document.getElementById('colorPicker').value;
+});
+
+// makeGrid function
 const makeGrid = (userInputHigh, userInputWidth) => {
-    // Your code goes here!
-    let tableRef = document.getElementById("pixelCanvas");
+    // Find target table by id and modify its dimension according to user input
+    let tableRef = document.getElementById('pixelCanvas');
     for (let i = 0; i < userInputHigh; i ++) {
-        let newRow = tableRef.insertRow();
+        const newRow = tableRef.insertRow();
         for (let j = 0; j < userInputWidth; j ++) {
             newRow.insertCell();
         }
     }
+
+    // jQuery to access table and on-click change its background color to userColor
+    $('table').on('click', 'td', function() {
+        $(this).css('background-color', userColor);
+    });
 }
