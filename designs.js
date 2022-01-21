@@ -19,6 +19,7 @@ document.addEventListener('input', function(event) {
 const makeGrid = (userInputHigh, userInputWidth) => {
     // Find target table by id and modify its dimension according to user input
     let tableRef = document.getElementById('pixelCanvas');
+    tableRef.innerHTML = ""; // Clear the grid on-click of the "submit button"
     for (let i = 0; i < userInputHigh; i ++) {
         const newRow = tableRef.insertRow();
         for (let j = 0; j < userInputWidth; j ++) {
