@@ -1,25 +1,143 @@
+/* Pixel Art Maker Styles */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 2rem;
 }
 
 h1 {
-    font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+    font-family: 'Monoton', cursive;
+    font-size: clamp(40px, 8vw, 70px);
+    margin: 0.2em 0;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
 }
 
 h2 {
-    margin: 1em 0 0.25em;
+    margin: 1em 0 0.5em;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
 }
 
-h2:first-of-type {
-    margin-top: 0.5em;
+.controls {
+    margin-bottom: 2rem;
 }
 
-table,
-tr,
-td {
-    border: 1px solid black;
+.form-group {
+    display: inline-block;
+    margin: 0 10px 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type=number] {
+    width: 6em;
+    padding: 8px;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #1a252f;
+}
+
+.color-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input[type=color] {
+    width: 100px;
+    height: 40px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.tool-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.canvas-container {
+    margin: 20px auto;
+}
+
+.table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -33,8 +151,31 @@ tr {
 
 td {
     width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.1s;
 }
 
-input[type=number] {
-    width: 6em;
+td:hover {
+    opacity: 0.8;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .form-group {
+        display: block;
+        margin: 0 0 15px;
+    }
 }
