@@ -1,28 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Pixel Art Maker!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create beautiful pixel art with this easy-to-use online Pixel Art Maker. Design custom pixel graphics for games, websites, or just for fun!">
+    <meta name="keywords" content="pixel art, pixel art maker, drawing tool, grid design, digital art">
+    <title>Pixel Art Maker | Create Custom Pixel Graphics</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Pixel Art Maker</h1>
+    <header>
+        <h1>Pixel Art Maker</h1>
+        <p class="tagline">Design your own pixel masterpiece!</p>
+    </header>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
-        Grid Width:
-        <input type="number" id="inputWidth" name="width" min="1" value="1">
-        <input type="submit">
-    </form>
+    <main>
+        <section class="controls">
+            <h2>Choose Grid Size</h2>
+            <form id="sizePicker" aria-label="Grid size selection">
+                <div class="form-group">
+                    <label for="inputHeight">Grid Height:</label>
+                    <input type="number" id="inputHeight" name="height" min="1" max="50" value="10" aria-label="Grid height">
+                </div>
+                <div class="form-group">
+                    <label for="inputWidth">Grid Width:</label>
+                    <input type="number" id="inputWidth" name="width" min="1" max="50" value="10" aria-label="Grid width">
+                </div>
+                <button type="submit" class="btn">Create Grid</button>
+            </form>
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+            <h2>Pick A Color</h2>
+            <div class="color-controls">
+                <input type="color" id="colorPicker" value="#3498db" aria-label="Color picker">
+                <div class="tool-options">
+                    <label for="eraseMode" class="checkbox-label">
+                        <input type="checkbox" id="eraseMode"> Eraser Mode
+                    </label>
+                    <button id="resetGrid" class="btn btn-secondary">Reset Grid</button>
+                </div>
+            </div>
+        </section>
 
-    <h2>Design Canvas</h2>
-    <table id="pixelCanvas"></table>
+        <section class="canvas-container">
+            <h2>Design Canvas</h2>
+            <div class="table-wrapper">
+                <table id="pixelCanvas" aria-label="Pixel art drawing canvas"></table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pixel Art Maker. Create and share your pixel art designs!</p>
+    </footer>
 
     <script src="designs.js"></script>
 </body>
