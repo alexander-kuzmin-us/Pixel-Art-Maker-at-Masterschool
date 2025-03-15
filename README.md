@@ -1,16 +1,90 @@
-# Pixel Art Maker Project
+# 🎨 Pixel Art Maker
 
-## Table of Contents
+An interactive web application that allows users to create stunning pixel art designs by choosing colors and drawing on a customizable grid.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+![Pixel Art Maker Preview](https://via.placeholder.com/800x400?text=Pixel+Art+Maker+Preview)
 
-## Instructions
+## ✨ Features
 
-To get started, open `designs.js` and start building out the app's functionality.
+- **Customizable Grid Size**: Create your canvas with any dimensions up to 50x50
+- **Color Selection**: Choose from unlimited colors with the color picker
+- **Draw Tools**: Click to color individual pixels or click and drag for continuous drawing
+- **Eraser Mode**: Easily remove colors from specific pixels
+- **Reset Option**: Clear the entire grid with one click
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## 📋 Table of Contents
 
-## Contributing
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage Instructions](#usage-instructions)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-This repository - is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## 🚀 Demo
+
+Try the Pixel Art Maker here: [Live Demo](https://your-demo-link.com)
+
+## 💻 Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/pixel-art-maker.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd pixel-art-maker
+   ```
+
+3. Open `index.html` in your web browser.
+
+## 📝 Usage Instructions
+
+1. **Set the Grid Size**:
+   - Enter your desired height and width values (1-50)
+   - Click "Create Grid" to generate your canvas
+
+2. **Select Colors**:
+   - Use the color picker to choose your desired color
+   - Toggle "Eraser Mode" to remove colors
+
+3. **Draw Your Art**:
+   - Click on individual cells to apply the selected color
+   - Click and drag to color multiple cells at once
+
+4. **Reset Canvas**:
+   - Click "Reset Grid" to clear all colors while maintaining your grid size
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- jQuery 3.6.0
+
+## 📁 Project Structure
+
+```
+pixel-art-maker/
+├── index.html      # Main HTML file
+├── styles.css      # CSS styling
+├── designs.js      # JavaScript functionality
+├── README.md       # Project documentation
+└── LICENSE.md      # License information
+```
+
+## 👥 Contributing
+
+This project was created as part of the Udacity curriculum. While we may not accept direct pull requests, feel free to fork this repository and customize it for your own use.
+
+If you have suggestions for improvements, please open an issue to discuss your ideas.
+
+## 📄 License
+
+This project is licensed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License - see the [LICENSE.md](License.md) file for details.
+
+---
+
+Created by [Alex Kuzmin] | [LinkedIn](https://www.linkedin.com/in/alexander-kuzmin/)
