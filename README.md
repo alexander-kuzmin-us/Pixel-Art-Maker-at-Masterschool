@@ -75,16 +75,6 @@ pixel-art-maker/
 └── LICENSE.md      # License information
 ```
 
-## 👥 Contributing
-
-This project was created as part of the Udacity curriculum. While we may not accept direct pull requests, feel free to fork this repository and customize it for your own use.
-
-If you have suggestions for improvements, please open an issue to discuss your ideas.
-
-## 📄 License
-
-This project is licensed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License - see the [LICENSE.md](License.md) file for details.
-
 ---
 
 Created by [Alex Kuzmin] | [LinkedIn](https://www.linkedin.com/in/alexander-kuzmin/)
