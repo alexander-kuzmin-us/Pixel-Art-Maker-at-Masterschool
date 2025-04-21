@@ -1,4 +1,4 @@
-# 🎨 Pixel Art Maker
+# 🎨 Pixel Art Maker!
 
 An interactive web application that allows users to create stunning pixel art designs by choosing colors and drawing on a customizable grid.
 
