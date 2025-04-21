@@ -2,7 +2,6 @@
 
 An interactive web application that allows users to create stunning pixel art designs by choosing colors and drawing on a customizable grid.
 
-![Pixel Art Maker Preview](https://via.placeholder.com/800x400?text=Pixel+Art+Maker+Preview)
 
 ## ✨ Features
 
