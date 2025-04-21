@@ -13,17 +13,12 @@ An interactive web application that allows users to create stunning pixel art de
 
 ## 📋 Table of Contents
 
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage Instructions](#usage-instructions)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
-
-## 🚀 Demo
-
-Try the Pixel Art Maker here: [Live Demo](https://your-demo-link.com)
 
 ## 💻 Installation
 
