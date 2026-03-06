@@ -71,4 +71,4 @@ pixel-art-maker/
 
 ---
 
-Created by [Alex Kuzmin] | [LinkedIn](https://www.linkedin.com/in/alexander-kuzmin/)
+Created by Alex Kuzmin [LinkedIn](https://www.linkedin.com/in/alexander-kuzmin/)
